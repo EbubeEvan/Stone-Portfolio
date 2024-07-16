@@ -79,7 +79,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex gap-7'>
+      <div className='mt-20 flex max-md:flex-col gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
