@@ -1,6 +1,15 @@
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+const Hero = React.lazy(() => import('./components/Hero'))
+const Navbar = React.lazy(() => import('./components/Navbar'))
+const About = React.lazy(() => import('./components/About'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Experience = React.lazy(() => import('./components/Experience'));
+const Feedbacks = React.lazy(() => import('./components/Feedbacks'));
+const Tech = React.lazy(() => import('./components/Tech'));
+const Works = React.lazy(() => import('./components/Works'));
+const StarsCanvas = React.lazy(() => import('./components/canvas/Stars'));
 
 const App = () => {
   return (
